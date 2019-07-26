@@ -3,6 +3,7 @@
 **Make sure your ip can visit all the contents from exhentai!!!!!**  
 (some ip address can not visit some contents from exhentai, mainly in japan)  
 
+Get the cookie from your browser which exhentai will be used and create a text file named `.cookie` and paste the cookie  
 Make sure to run `npm install`, you will need `nodejs` installled  
 update `from` value at `index.js:9`, I'm now working on under 5000 page, you can start from 5000 or above, and make sure open an issue and said where your starting, you should also check the issue if there is no one starting from some numbers  
 run `node index.js`  
