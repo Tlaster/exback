@@ -5,8 +5,13 @@ const axiosRetry = require('axios-retry');
 const pLimit = require('p-limit');
 const fs = require('fs').promises;
 
+const args = process.argv.slice(2);
+let from = 0;
+if (args[0] != undefined && args[0] != null && !isNaN(args[0])) {
+    from = parseInt(args[0]);
+}
+
 const interval = 100;
-let from = 2100;
 let to = from + interval;
 
 const limit = pLimit(3);
